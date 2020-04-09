@@ -5,7 +5,8 @@ html{
 body{
     background-color: black;
     
-    text-align: center;
+    
+   
 }
 
 header{
@@ -24,26 +25,87 @@ header h1{
 header a{
     font-size: 1rem;
     color: aquamarine;
+    font-family: Verdana;
     
 }
 
-.content{
-    display: block;
+.container{
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
 }
 
-.content h1{
-    font-family: Verdana;
-    font-weight: 300;
-    font-size: 2.625rem;
-    color: white
+.phone{
+    margin: auto;
+    padding: 1rem 0;
 }
-.content h2{
-    font-family: Verdana;
+
+.nono{
+    margin: auto;
+    padding: 1rem 0;
+    overflow: hidden; 
+}
+
+.nono h2{
+   font-family: Verdana;
+   font-weight: 300;
+   font-size: 2.625rem;
+   color: white;
+}
+
+.nono h4{
     font-size: 1.3125rem;
     color: grey;
+    font-family: Verdana;
 }
 
-.content .images{
+  .nono a{
+    font-size: 1rem;
+    color: aquamarine;
+    font-family: Verdana;
+    display: block;
     
-    padding: 2rem;
+}
+
+.nono h3{
+    float: right;
+    color: grey;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    bottom: 50%;
+    
+}
+
+
+
+@media only  screen and (max-width: 720px){
+    .container{
+        padding: 1rem;
+    }
+    .nono{
+        margin: 0px .5rem;
+        padding: 1rem;
+    }
+
+    .nono h2{
+        font-size: 2rem;
+        line-height: 1.3;
+    }
+    .nono h4{
+        font-size: .875rem;
+        line-height: 1.4;
+    }
+
+}
+
+@media only  screen and (max-width: 600px){
+    .container{
+        flex-flow: column;
+        padding: 0;
+    }
+    .nono{
+        margin: 0px .5rem;
+        padding: 1rem;
+    }
+
 }
