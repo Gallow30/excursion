@@ -4,6 +4,8 @@ html{
 
 body{
     background-color: black;
+    
+    text-align: center;
 }
 
 header{
@@ -24,3 +26,5 @@ header a{
     color: aquamarine;
     
 }
+
+
